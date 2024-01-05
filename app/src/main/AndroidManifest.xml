@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.avassapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.avassapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.avassapplication.app.modules.loadingstateloading.ui.LoadingStateLoadingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.signupsimulation.ui.SignupSimulationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.soundskeletonstateloadingsound.ui.SoundSkeletonStateLoadingSoundActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.inappsubscriptionpagepaywallaspectratioscreennom.ui.InAppSubscriptionPagePaywallAspectratioScreenNomActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.userprofile.ui.UserProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.intro2nomenu.ui.Intro2NomenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.editprofile.ui.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.intro3nomenu.ui.Intro3NomenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.intro1introoncenomenu.ui.Intro1IntroOnceNomenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.passwordresetone.ui.PasswordResetOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.passwordreset.ui.PasswordResetActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.menumenutabs.ui.MenuMenuTabsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.appiconasseticon.ui.AppIconAssetIconActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.settings.ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.detailpagemainnomenunoloadingrefreshalways.ui.DetailPageMainNomenuNoLoadingRefreshAlwaysActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.subscriptionerrorpagepagepopup.ui.SubscriptionErrorPagePagePopupActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.avassapplication.app.modules.homepagestatedefaulthome.ui.HomePageStateDefaultHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.avassapplication.app.modules.splashscreenassetsplash.ui.SplashScreenAssetSplashActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.notificationsnomenupostlogin.ui.NotificationsNomenuPostLoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.bookmarksrefreshalways.ui.BookmarksRefreshAlwaysActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.homeskeletonstateloadinghome.ui.HomeSkeletonStateLoadingHomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.onboardingintro.ui.OnboardingIntroActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.searchmeditationsnoloading.ui.SearchMeditationsNoLoadingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.loginpageloginpostloginaction.ui.LoginPageLoginPostLoginActionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.categorypagenomenu.ui.CategoryPageNomenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.soundliststatedefaultsound.ui.SoundListStateDefaultSoundActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.postlogininfoform.ui.PostLoginInfoFormActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.avassapplication.app.modules.subscriptionsuccesspagepagepopup.ui.SubscriptionSuccessPagePagePopupActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

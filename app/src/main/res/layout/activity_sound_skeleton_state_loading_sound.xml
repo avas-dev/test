@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="soundSkeletonStateLoadingSoundVM" type="com.avassapplication.app.modules.soundskeletonstateloadingsound.data.viewmodel.SoundSkeletonStateLoadingSoundVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearSoundskeleton"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearTopcontainer"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+            <TextView android:gravity="start"
+                android:id="@+id/txtMeditationtitl"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_19pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_142pxv"
+                android:layout_width="match_parent"
+                android:text="@{soundSkeletonStateLoadingSoundVM.soundSkeletonStateLoadingSoundModel.txtMeditationtitl}"
+                style="@style/txtPoppinssemibold30_1" tools:text="@string/msg_sounds_meditat"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_bg_gray_100_radius_3_5"
+            android:id="@+id/viewImage"
+            android:layout_height="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_35pxv" android:layout_width="@dimen/_272pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_gray_100_radius_3_5"
+            android:id="@+id/viewImageOne"
+            android:layout_height="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_11pxv" android:layout_width="@dimen/_181pxh"/>
+        <View
+            android:background="@drawable/rectangle_bg_gray_100_radius_24"
+            android:id="@+id/viewBackground"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_79pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_31pxv" android:layout_width="@dimen/_341pxh"/>
+    </LinearLayout>
+</layout>

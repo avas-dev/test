@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderbgModel" type="com.avassapplication.app.modules.homepagestatedefaulthome.data.model.ImageSliderSliderbgModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCategoryslide"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_8pxh"
+        android:layout_marginStart="@dimen/_16pxh" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageBg"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_160pxh"
+            android:layout_width="@dimen/_120pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+            imageUrl="@{imageSliderSliderbgModel.imageBg}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_bg"/>
+        <LinearLayout android:id="@+id/linearColumntitleOne"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_900_33cornerRadius">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtTitleOne"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_101pxv"
+                android:layout_width="match_parent"
+                android:text="@{imageSliderSliderbgModel.txtTitleOne}"
+                style="@style/txtManropebold18" tools:text="@string/msg_category_title"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

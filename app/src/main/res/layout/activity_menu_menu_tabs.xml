@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="menuMenuTabsVM" type="com.avassapplication.app.modules.menumenutabs.data.viewmodel.MenuMenuTabsVM"/>
+    </data>
+    <LinearLayout android:background="@color/gray_101"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearMenumenutabs"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical"/>
+</layout>

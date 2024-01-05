@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="appIconAssetIconVM" type="com.avassapplication.app.modules.appiconasseticon.data.viewmodel.AppIconAssetIconVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearAppiconasset"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_A700">
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnol" android:layout_gravity="start"
+            android:layout_height="@dimen/_62pxv"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_45pxv"
+            android:layout_width="@dimen/_130pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_21pxh"
+            android:paddingStart="@dimen/_21pxh"
+            android:paddingTop="@dimen/_13pxv" android:singleLine="true"
+            android:text="@string/lbl_ol" android:textAllCaps="false"
+            style="@style/btnSolidRounded_5" tools:text="@string/lbl_ol"/>
+        <ImageView android:id="@+id/imageGroupThirtyTwo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_97pxh"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_56pxv"
+            android:layout_width="@dimen/_153pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group32"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_group32"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtMeditation"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{appIconAssetIconVM.appIconAssetIconModel.txtMeditation}"
+            style="@style/txtPulpDisplaybold80" tools:text="@string/lbl_meditation"/>
+    </LinearLayout>
+</layout>

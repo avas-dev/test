@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="inAppSubscriptionPagePaywallAspectratioScreenNomVM" type="com.avassapplication.app.modules.inappsubscriptionpagepaywallaspectratioscreennom.data.viewmodel.InAppSubscriptionPagePaywallAspectratioScreenNomVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearInappsubscrip"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_4">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_white_a700_4c_radius_8"
+            android:id="@+id/btnClose"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_64pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:paddingHorizontal="@dimen/_13pxh"
+            android:paddingVertical="@dimen/_13pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_close" tools:ignore="ContentDescription"/>
+        <FrameLayout android:id="@+id/frameStacklotus"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_125pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="@dimen/_125pxh" style="@style/groupStylewhite_2">
+            <ImageView android:id="@+id/imageLOTUS"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_64pxh"
+                android:layout_marginBottom="@dimen/_30pxv"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_30pxv"
+                android:layout_width="@dimen/_100pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_lotus_red_200"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_lotus_red_200"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnPremium"
+            android:layout_height="@dimen/_34pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_66pxv"
+            android:layout_width="@dimen/_89pxh"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_16pxh"
+            android:paddingStart="@dimen/_16pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@string/lbl_premium"
+            android:textAllCaps="false" style="@style/btnSolidRounded_6" tools:text="@string/lbl_premium"/>
+        <TextView android:id="@+id/txtPaywalltitle"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:text="@{inAppSubscriptionPagePaywallAspectratioScreenNomVM.inAppSubscriptionPagePaywallAspectratioScreenNomModel.txtPaywalltitle}"
+            style="@style/txtPoppinsbold31_1" tools:text="@string/msg_unlock_exclusiv"/>
+        <TextView android:id="@+id/txtPaywalldescrip"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:text="@{inAppSubscriptionPagePaywallAspectratioScreenNomVM.inAppSubscriptionPagePaywallAspectratioScreenNomModel.txtPaywalldescrip}"
+            style="@style/txtManroperegular16_1" tools:text="@string/msg_lorem_ipsum_dol2"/>
+        <FrameLayout android:id="@+id/frameStackpaywalldescripOne"
+            android:layout_height="@dimen/_105pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_249pxh">
+            <RadioButton android:buttonTint="@color/white_A700"
+                android:fontFamily="@font/manrope"
+                android:id="@+id/rbPaywalldescripOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_15pxh"
+                android:paddingStart="@dimen/_16pxh"
+                android:text="@string/msg_unlock_all_cont"
+                android:textColor="@color/white_A700"
+                android:textFontWeight="500"
+                android:textSize="@dimen/_20pxh"
+                android:textStyle="bold" tools:text="@string/msg_unlock_all_cont"/>
+            <View
+                android:background="@drawable/rectangle_bg_white_a700_radius_4"
+                android:id="@+id/viewEllipseTwo"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_8pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_8pxv" android:layout_width="@dimen/_8pxh"/>
+            <View
+                android:background="@drawable/rectangle_bg_white_a700_radius_4"
+                android:id="@+id/viewEllipseFour"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_8pxh"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_8pxh"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSubscribeFor499month"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_79pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv" android:singleLine="true"
+            android:text="@string/msg_subscribe_for_4"
+            android:textAllCaps="false" style="@style/btnSolidRounded_7" tools:text="@string/msg_subscribe_for_4"/>
+    </LinearLayout>
+</layout>
