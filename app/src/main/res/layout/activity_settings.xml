@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settingsVM" type="com.avassapplication.app.modules.settings.data.viewmodel.SettingsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSettings"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearTopbarcontain"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_63pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_gray_201_radius_8"
+                    android:id="@+id/btnArrowleft"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:paddingHorizontal="@dimen/_14pxh"
+                    android:paddingVertical="@dimen/_14pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnUpgrade"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginStart="@dimen/_206pxh"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_8pxv"
+                    android:paddingEnd="@dimen/_11pxh"
+                    android:paddingStart="@dimen/_12pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_upgrade"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_upgrade"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCategoryPageT"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_17pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{settingsVM.settingsModel.txtCategoryPageT}"
+                style="@style/txtPoppinsbold24" tools:text="@string/lbl_settings"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearTermsaction"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_105pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTermAndCondition"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.97" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{settingsVM.settingsModel.txtTermAndCondition}"
+                style="@style/txtNunitomedium20" tools:text="@string/msg_terms_conditi"/>
+            <ImageView android:id="@+id/imageArrowright"
+                android:layout_height="@dimen/_11pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_138pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_5pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearGeneralinfoa"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGeneralinfo"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{settingsVM.settingsModel.txtGeneralinfo}"
+                style="@style/txtNunitomedium20" tools:text="@string/lbl_general_info"/>
+            <ImageView android:id="@+id/imageArrowrightOne"
+                android:layout_height="@dimen/_11pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_200pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_5pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearContactusact"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtContactus"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.94" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{settingsVM.settingsModel.txtContactus}"
+                style="@style/txtNunitomedium20" tools:text="@string/lbl_contact_us"/>
+            <ImageView android:id="@+id/imageArrowrightTwo"
+                android:layout_height="@dimen/_11pxh"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginStart="@dimen/_215pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="@dimen/_5pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrowright"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtRestorePurchas"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_121pxh"
+            android:layout_marginStart="@dimen/_121pxh"
+            android:layout_marginTop="@dimen/_236pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{settingsVM.settingsModel.txtRestorePurchas}"
+            style="@style/txtNunitomedium14" tools:text="@string/msg_restore_purchas"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtTermsofServic"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_68pxh"
+            android:layout_marginStart="@dimen/_68pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{settingsVM.settingsModel.txtTermsofServic}"
+            style="@style/txtPulpDisplayregular14" tools:text="@string/msg_terms_of_servic"/>
+        <TextView android:gravity="start" android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_19pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="match_parent"
+            android:text="@{settingsVM.settingsModel.txtLanguage}"
+            style="@style/txtNunitoregular14" tools:text="@string/msg_if_you_subscrib"/>
+    </LinearLayout>
+</layout>

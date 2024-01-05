@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="intro3NomenuVM" type="com.avassapplication.app.modules.intro3nomenu.data.viewmodel.Intro3NomenuVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearIntro3nomenu"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_3">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_white_a700_radius_8"
+            android:id="@+id/btnArrowleft"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_64pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:paddingHorizontal="@dimen/_14pxh"
+            android:paddingVertical="@dimen/_14pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+        <ImageView android:id="@+id/imageLOTUS"
+            android:layout_height="@dimen/_64pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_354pxv"
+            android:layout_width="@dimen/_100pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_lotus"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_lotus"/>
+
+        <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+            android:id="@+id/indicatorGroupTwentyTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="wrap_content"
+            app:drawable_normal="@drawable/indicator_unselected_bg_white_a700_66_radius_8"
+            app:drawable_selected="@drawable/indicator_selected_bg_indigo_a700_radius_8"
+            app:indicator_size="@dimen/_32pxh" app:indicator_spacing="@dimen/_8pxh"/>
+        <TextView android:id="@+id/txtIntroTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:text="@{intro3NomenuVM.intro3NomenuModel.txtIntroTwo}"
+            style="@style/txtPoppinsmedium31" tools:text="@string/msg_izbolj_ajte_svo"/>
+        <ImageView android:id="@+id/imageCTAactionclo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_59pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_width="@dimen/_343pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_ctaactionclo"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ctaactionclo"/>
+    </LinearLayout>
+</layout>

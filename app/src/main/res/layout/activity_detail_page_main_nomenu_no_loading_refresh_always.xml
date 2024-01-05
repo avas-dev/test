@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailPageMainNomenuNoLoadingRefreshAlwaysVM" type="com.avassapplication.app.modules.detailpagemainnomenunoloadingrefreshalways.data.viewmodel.DetailPageMainNomenuNoLoadingRefreshAlwaysVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearDetailpagemai"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameUpperIMGBac"
+            android:layout_height="@dimen/_312pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageMeditationimag"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_312pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_meditationimag}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_meditationimag"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="top|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_64pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_64pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_white_a700_radius_8"
+                        android:id="@+id/btnArrowleft"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_width="@dimen/_40pxh"
+                        android:paddingHorizontal="@dimen/_14pxh"
+                        android:paddingVertical="@dimen/_14pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_arrowleft" tools:ignore="ContentDescription"/>
+                    <FrameLayout android:id="@+id/frameFeaturebutton"
+                        android:layout_height="@dimen/_30pxv"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginStart="@dimen/_277pxh"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_23pxh">
+                        <ImageView android:id="@+id/imageBookmark"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_30pxh"
+                            android:layout_width="@dimen/_23pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_bookmark"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_bookmark"/>
+                        <ImageView android:id="@+id/imageBookmarkOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_30pxh"
+                            android:layout_width="@dimen/_23pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_bookmark_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_bookmark_white_a700"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnCategory" android:layout_gravity="start"
+            android:layout_height="@dimen/_34pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="@dimen/_74pxh"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_8pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@string/lbl_category"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_category"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtMeditationtitl"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_49pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{detailPageMainNomenuNoLoadingRefreshAlwaysVM.detailPageMainNomenuNoLoadingRefreshAlwaysModel.txtMeditationtitl}"
+            style="@style/txtPoppinssemibold24" tools:text="@string/msg_name_of_the_ses"/>
+        <FrameLayout android:id="@+id/frameStackuser"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_54pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="@dimen/_343pxh" style="@style/groupStyleindigo_A700cornerRadius">
+            <ImageView android:id="@+id/imageUser"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_26pxh"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="@dimen/_26pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_user_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_user_white_a700"/>
+            <ImageView android:id="@+id/imagePlayactionpl"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_26pxh"
+                android:layout_marginBottom="@dimen/_13pxv"
+                android:layout_marginEnd="@dimen/_40pxh"
+                android:layout_marginStart="@dimen/_40pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="@dimen/_26pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_playactionpl"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_playactionpl"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linearRowtime"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{detailPageMainNomenuNoLoadingRefreshAlwaysVM.detailPageMainNomenuNoLoadingRefreshAlwaysModel.txtTime}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/lbl_0_00"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTimeOne"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_275pxh"
+                android:layout_weight="0.5" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{detailPageMainNomenuNoLoadingRefreshAlwaysVM.detailPageMainNomenuNoLoadingRefreshAlwaysModel.txtTimeOne}"
+                style="@style/txtPoppinssemibold14" tools:text="@string/lbl_0_00"/>
+        </LinearLayout>
+        <View android:background="@color/bluegray_101"
+            android:id="@+id/lineLine"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_43pxv" android:layout_width="@dimen/_343pxh"/>
+    </LinearLayout>
+</layout>

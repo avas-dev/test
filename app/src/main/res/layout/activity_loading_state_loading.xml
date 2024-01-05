@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loadingStateLoadingVM" type="com.avassapplication.app.modules.loadingstateloading.data.viewmodel.LoadingStateLoadingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumncomponentlott"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_404pxv"
+        android:layout_marginEnd="@dimen/_153pxh"
+        android:layout_marginStart="@dimen/_154pxh"
+        android:layout_marginTop="@dimen/_405pxv"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <FrameLayout android:id="@+id/frameContainer"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageComponentlott"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_94pxh"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_14pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_94pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_componentlott}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_componentlott"/>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

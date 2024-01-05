@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="intro1IntroOnceNomenuVM" type="com.avassapplication.app.modules.intro1introoncenomenu.data.viewmodel.Intro1IntroOnceNomenuVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearIntro1intro"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtSkipactioncl"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_66pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{intro1IntroOnceNomenuVM.intro1IntroOnceNomenuModel.txtSkipactioncl}"
+            style="@style/txtManropeextrabold16_1" tools:text="@string/lbl_skip"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearContainercont"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle_1">
+            <ImageView android:id="@+id/imageLOTUS"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_64pxh"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_363pxv"
+                android:layout_width="@dimen/_100pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_lotus"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_lotus"/>
+
+            <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                android:id="@+id/indicatorGroupTwentyOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="wrap_content"
+                app:drawable_normal="@drawable/indicator_unselected_bg_white_a700_66_radius_8"
+                app:drawable_selected="@drawable/indicator_selected_bg_indigo_a700_radius_8"
+                app:indicator_size="@dimen/_32pxh" app:indicator_spacing="@dimen/_8pxh"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtIntroOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:text="@{intro1IntroOnceNomenuVM.intro1IntroOnceNomenuModel.txtIntroOne}"
+                style="@style/txtPoppinsmedium31" tools:text="@string/msg_vklju_ite_medit"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnNaprej"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_naprej"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_2" tools:text="@string/lbl_naprej"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

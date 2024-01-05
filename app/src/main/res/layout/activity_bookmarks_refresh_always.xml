@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bookmarksRefreshAlwaysVM" type="com.avassapplication.app.modules.bookmarksrefreshalways.data.viewmodel.BookmarksRefreshAlwaysVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnapptitle"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_524pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackapptitle"
+            android:layout_height="@dimen/_146pxv" android:layout_width="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="end"
+                    android:id="@+id/linearTopwhenscroll"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtApptitle"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginStart="@dimen/_129pxh"
+                        android:layout_marginTop="@dimen/_47pxv"
+                        android:layout_weight="0.56"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{bookmarksRefreshAlwaysVM.bookmarksRefreshAlwaysModel.txtApptitle}"
+                        style="@style/txtPoppinsbold20" tools:text="@string/lbl_bookmarks"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearUpgradebutton"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_14pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_49pxv"
+                        android:layout_weight="0.44"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyledeep_purple_500cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtCategory"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_8pxv"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_12pxh"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{bookmarksRefreshAlwaysVM.bookmarksRefreshAlwaysModel.txtCategory}"
+                            style="@style/txtNunitobold13" tools:text="@string/lbl_upgrade"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:id="@+id/linearTopcontainer"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout android:id="@+id/linearRowcategorypaget"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_63pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCategoryPageT"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.6"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{bookmarksRefreshAlwaysVM.bookmarksRefreshAlwaysModel.txtCategoryPageT}"
+                        style="@style/txtPoppinsbold24" tools:text="@string/lbl_bookmarks"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnUpgrade"
+                        android:layout_height="@dimen/_34pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_104pxh"
+                        android:layout_width="@dimen/_94pxh"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:paddingEnd="@dimen/_11pxh"
+                        android:paddingStart="@dimen/_12pxh"
+                        android:paddingTop="@dimen/_8pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_upgrade"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_upgrade"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCategoryPageD"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{bookmarksRefreshAlwaysVM.bookmarksRefreshAlwaysModel.txtCategoryPageD}"
+                    style="@style/txtNunitoregular16" tools:text="@string/msg_your_favourite"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearBookmarksrefr"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <FrameLayout android:id="@+id/frameIMG"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_188pxv"
+                android:layout_width="@dimen/_343pxh" style="@style/groupStylecornerRadius">
+                <ImageView android:id="@+id/imageIMG"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_188pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_16pxh}"
+                    imageRes="@{@drawable/img_img_3}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_img_3"/>
+                <LinearLayout android:id="@+id/linearColumncategoryOne"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleblack_900_63cornerRadius">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnCategoryOne"
+                        android:layout_height="@dimen/_34pxv"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="@dimen/_74pxh"
+                        android:paddingBottom="@dimen/_8pxv"
+                        android:paddingEnd="@dimen/_8pxh"
+                        android:paddingStart="@dimen/_9pxh"
+                        android:paddingTop="@dimen/_8pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_category"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded_1" tools:text="@string/lbl_category"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTitle"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_23pxh"
+                        android:layout_marginStart="@dimen/_23pxh"
+                        android:layout_marginTop="@dimen/_39pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{bookmarksRefreshAlwaysVM.bookmarksRefreshAlwaysModel.txtTitle}"
+                        style="@style/txtNunitoextrabold16" tools:text="@string/lbl_title"/>
+                    <TextView android:id="@+id/txtShortdescript"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_22pxv"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{bookmarksRefreshAlwaysVM.bookmarksRefreshAlwaysModel.txtShortdescript}"
+                        style="@style/txtNunitoregular13" tools:text="@string/msg_short_descripti"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

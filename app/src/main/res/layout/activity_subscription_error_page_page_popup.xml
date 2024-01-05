@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="subscriptionErrorPagePagePopupVM" type="com.avassapplication.app.modules.subscriptionerrorpagepagepopup.data.viewmodel.SubscriptionErrorPagePagePopupVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearSubscriptioner"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:id="@+id/linearContainercont"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_180pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_3">
+            <ImageButton
+                android:background="@drawable/rectangle_bg_gray_400_4c_radius_8"
+                android:id="@+id/btnClose" android:layout_gravity="end"
+                android:layout_height="@dimen/_40pxh"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="@dimen/_40pxh"
+                android:paddingHorizontal="@dimen/_13pxh"
+                android:paddingVertical="@dimen/_13pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_close_black_900" tools:ignore="ContentDescription"/>
+            <TextView android:id="@+id/txtError"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_10pxh"
+                android:text="@{subscriptionErrorPagePagePopupVM.subscriptionErrorPagePagePopupModel.txtError}"
+                style="@style/txtPoppinsbold25" tools:text="@string/msg_payment_not_com"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:text="@{subscriptionErrorPagePagePopupVM.subscriptionErrorPagePagePopupModel.txtDescription}"
+                style="@style/txtLatoregular15" tools:text="@string/msg_payment_has_fai"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnTryAgain"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_try_again"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_9" tools:text="@string/lbl_try_again"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

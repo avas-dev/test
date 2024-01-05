@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenAssetSplashVM" type="com.avassapplication.app.modules.splashscreenassetsplash.data.viewmodel.SplashScreenAssetSplashVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumngroupthirtytwo"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_42pxv"
+        android:layout_marginEnd="@dimen/_114pxh"
+        android:layout_marginStart="@dimen/_114pxh"
+        android:layout_marginTop="@dimen/_418pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_A700">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearSplashscreen"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageGroupThirtyTwo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_89pxh"
+                    android:layout_marginEnd="@dimen/_29pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_width="@dimen/_141pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group32"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group32"/>
+                <ImageView android:gravity="start"
+                    android:id="@+id/imageMadewithbravo"
+                    android:layout_height="@dimen/_41pxh"
+                    android:layout_marginTop="@dimen/_334pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_madewithbravo"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_madewithbravo"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
